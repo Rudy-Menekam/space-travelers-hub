@@ -62,15 +62,15 @@ hr {
   display: flex;
 }
 
-.content img{
- width: 250px;
- height: 250px;
+.content img {
+  width: 250px;
+  height: 250px;
 }
 
 .description {
   padding-left: 50px;
 }
 
-.description h1{
+.description h1 {
   margin: 0;
 }
