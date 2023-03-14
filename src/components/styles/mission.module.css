@@ -1,0 +1,22 @@
+.missionsContainer {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.missionsHeader {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #f7f7f7;
+}
+
+.missionsHeader div {
+  text-align: center;
+  border: 1px solid #e5e3e3;
+  padding: 0 0.5rem;
+}
+
+.missionsHeader div p {
+  line-height: 3rem;
+  font-weight: 600;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #333;
+}
