@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <Header />
+      <hr />
       <Routes>
         <Route path="/" element={<MyProfile />} />
         <Route path="missions" element={<Missions />} />
