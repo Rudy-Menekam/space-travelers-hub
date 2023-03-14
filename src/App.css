@@ -39,3 +39,38 @@ hr {
   border: solid 1px lightgray;
   margin-top: 1px;
 }
+
+.button {
+  width: 11.5rem;
+  height: 3rem;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-size: 0.813rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: white;
+  border: none;
+}
+
+.content {
+  margin: 2.313rem 6.25rem 0;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  display: flex;
+}
+
+.content img{
+ width: 250px;
+ height: 250px;
+}
+
+.description {
+  padding-left: 50px;
+}
+
+.description h1{
+  margin: 0;
+}

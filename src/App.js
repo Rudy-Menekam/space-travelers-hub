@@ -4,6 +4,7 @@ import React from 'react';
 import Header from './components/header';
 import MyProfile from './components/my_profile';
 import Missions from './components/missions';
+import Rockets from './components/rockets';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Header />
       <hr />
       <Routes>
-        <Route path="/" element={<MyProfile />} />
+        <Route path="/" element={<Rockets />} />
+        <Route path="my_profile" element={<MyProfile />} />
         <Route path="missions" element={<Missions />} />
       </Routes>
     </>
