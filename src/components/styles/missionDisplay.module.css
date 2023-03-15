@@ -1,0 +1,56 @@
+.missionItems {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1.2fr;
+  grid-template-rows: minmax(6.5rem, auto);
+}
+
+.missionItems:nth-child(odd) {
+  background-color: rgb(229, 227, 227, 0.5);
+}
+
+.missionItems div {
+  text-align: left;
+  border: 1px solid rgb(229, 227, 227);
+  padding-left: 0.5rem;
+}
+
+.missionInfo {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.missionHead {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 1rem;
+}
+
+.missionItems div p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.memberBtn {
+  background-color: rgb(0, 0, 0, 0.65);
+  padding: 0.25rem 1.4rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.joinMissionBtn {
+  background-color: transparent;
+  padding: 0.5rem 1.8rem;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-weight: 500;
+}
