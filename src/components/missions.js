@@ -45,6 +45,11 @@ function Missions() {
               </button>
             )}
           </div>
+          <div className={styles.buttons}>
+            <button type="button" className={styles.joinMissionBtn}>
+              Join Mission
+            </button>
+          </div>
         </div>
       ))}
     </div>
