@@ -1,39 +1,61 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-// import React, { useState } from 'react';
+import axios from 'axios';
 
 const url = 'https://api.spacexdata.com/v4/rockets';
-// const [setData] = useState([]);
 export const fetchRocket = createAsyncThunk('Rocket/fetchRocket', async () => {
   try {
-    const resp = await fetch(url);
-    return await resp.json();
-  } catch (err) {
-    return console.log(err);
+    const response = await axios.get(url);
+    return response.data;
+  } catch (error) {
+    return error.message;
   }
 });
 
 const initialState = {
-  rocket: [],
+  rocketList: [],
+  status: 'idle',
+  error: null,
 };
 
 const rocketSlice = createSlice({
-  name: 'rocket',
+  name: 'rockets',
   initialState,
-  reducers: {},
-  extraReducers: {
-
-    [fetchRocket.pending]: (state) => {
-      state.isLoading = true;
-    },
-    [fetchRocket.fulfilled]: (state, action) => {
-      console.log(action);
-      state.isLoading = false;
-      state.rockets = action.payload;
-    },
-    [fetchRocket.rejected]: (state) => {
-      state.isLoading = false;
-    },
+  reducers: {
+    reserveRocket: (state, payload) => ({
+      ...state,
+      rocketList: state.rocketList.map((rocket) => {
+        if (rocket.id === payload.payload) {
+          if (rocket.reserved === true) {
+            return { ...rocket, reserved: false };
+          }
+          return { ...rocket, reserved: true };
+        }
+        return rocket;
+      }),
+    }),
+  },
+  extraReducers(builder) {
+    builder.addCase(fetchRocket.pending, (state) => ({
+      ...state,
+      status: 'loading',
+    }))
+      .addCase(fetchRocket.fulfilled, (state, action) => ({
+        ...state,
+        rocketList: action.payload.map((rocket) => ({
+          id: rocket.id,
+          name: rocket.name,
+          description: rocket.description,
+          flickr_images: rocket.flickr_images[0],
+        })),
+        status: 'succeded',
+      }))
+      .addCase(fetchRocket.rejected, (state, action) => ({
+        ...state,
+        status: 'failed',
+        error: action.error.message,
+      }));
   },
 });
 
+export const { reserveRocket } = rocketSlice.actions;
 export default rocketSlice.reducer;

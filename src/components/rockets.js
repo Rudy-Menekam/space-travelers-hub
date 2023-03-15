@@ -1,55 +1,43 @@
 import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchRocket } from '../reduxState/rockets/rocketSlice';
+import { reserveRocket, fetchRocket } from '../reduxState/rockets/rocketSlice';
 
-function Rockets({ rocket }) {
-  const {
-    id,
-    rocket_name,
-    description,
-    flickr_images,
-  } = rocket;
+function Rockets() {
   const dispatch = useDispatch();
-  const rockets = useSelector((state) => state.rockets);
+  const status = useSelector((state) => state.Rocket.status);
+  const rockets = useSelector((state) => state.Rocket.rocketList);
 
   useEffect(() => {
-    dispatch(fetchRocket());
-  }, []);
+    if (status === 'idle') {
+      dispatch(fetchRocket());
+    }
+  }, [status, dispatch]);
+
   return (
     <>
-      {rockets.map((rocket) => (
-        <div className="content">
-          <img src={flickr_images} alt="mail" />
+      {rockets?.map((Rocket) => (
+        <div className="content" key={Rocket.id}>
+          <img src={Rocket.flickr_images} alt="mail" />
           <div className="description">
-            <h1>{rocket_name}</h1>
+            <h1>{Rocket.name}</h1>
             <p>
-              {description}
+              {Rocket.description}
             </p>
             <button
               type="submit"
               value="Reserve Rocket"
               className="button"
               onClick={() => {
-                // dispatch(reserveRocket(id));
+                dispatch(reserveRocket(Rocket.id));
               }}
             >
-              Reserve Rocket
+              {Rocket.reserved ? ('Cancel Reservation') : ('Reserve Rocket')}
             </button>
           </div>
         </div>
       ))}
-      ,
     </>
   );
 }
-Rockets.propTypes = {
-  rocket: PropTypes.shape({
-    rocket_name: PropTypes.string,
-    description: PropTypes.string,
-    id: PropTypes.string,
-    flickr_images: PropTypes.string,
-  }).isRequired,
-};
 
 export default Rockets;
