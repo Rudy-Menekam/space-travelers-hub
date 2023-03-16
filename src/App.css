@@ -1,18 +1,18 @@
 #nav {
-  width: 89%;
   height: 5.938rem;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 12px;
 }
 
 .logo {
   font-size: 2.875rem;
   font-weight: bold;
   color: #000;
-  margin-right: 49rem;
+  margin-right: 48rem;
 }
 
 nav ul {
