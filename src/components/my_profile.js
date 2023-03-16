@@ -35,7 +35,7 @@ function MyProfile() {
             {rockets.filter((rocket) => rocket.reserved === true).length > 0 ? (
               rockets
                 .filter((rocket) => rocket.reserved === true)
-                .map((rocket) => <p key={rocket.id}>{rocket.name}</p>)
+                .map((rocket) => <li key={rocket.id}>{rocket.name}</li>)
             ) : (
               <li>No rockets have been reserved.</li>
             )}
