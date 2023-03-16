@@ -12,7 +12,7 @@
   font-size: 2.875rem;
   font-weight: bold;
   color: #000;
-  margin-right: 28rem;
+  margin-right: 49rem;
 }
 
 nav ul {
@@ -75,14 +75,12 @@ hr {
   margin: 0;
 }
 
-.Badge {
-  padding: 4px;
+/* .Badge {
   color: white;
-  border-radius: 5px;
-  margin-right: 10px;
-  margin-top: 5px;
-  background-color: darkgreen;
-}
+  background-color: rgb(87, 87, 216);
+  padding: 4px;
+  border-radius: 3px;
+} */
 
 .rocket_filter {
   border: 1px solid;
