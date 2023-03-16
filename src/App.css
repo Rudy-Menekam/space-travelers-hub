@@ -73,6 +73,19 @@ hr {
   padding-left: 50px;
 }
 
+.rocket_filter h1 {
+  margin-left: 2.3rem;
+}
+
+.rocket_filter li {
+  border: 0.2px solid #6a6a6a;
+  padding: 1em 8em;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
+  list-style-type: none;
+}
+
 .description h1 {
   margin: 0;
 }
@@ -86,6 +99,11 @@ hr {
   background-color: darkgreen;
 }
 
-.rocket_filter {
+.rocket_filter p {
   border: 1px solid;
+  padding: 1em 8em;
+  background-color: #9494a9;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
 }
