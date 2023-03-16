@@ -1,20 +1,22 @@
 /* eslint-disable no-param-reassign */
-import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styles from './styles/mission.module.css';
-import { getMission } from '../reduxState/missionSlice';
+import { joinMission } from '../reduxState/missionSlice';
 
 function Missions() {
+  const { missions, status } = useSelector((store) => store.missions);
   const dispatch = useDispatch();
-  const missions = useSelector((state) => state.missions.missions);
 
-  useEffect(() => {
-    dispatch(getMission());
-  }, [dispatch]);
-
+  function displayJoinMission(currentState) {
+    return currentState ? 'Leave Mission' : 'Join Mission';
+  }
+  const handleJoinMission = (id) => dispatch(joinMission(id));
+  if (status === 'loading') {
+    return <h3 className={styles.loading}>Loading Missions...</h3>;
+  }
   return (
-    <div className={styles.missionsContainer}>
-      <div className={styles.missionsHeader}>
+    <div className={styles.missions}>
+      <div className={styles.header}>
         <div>
           <p>Mission</p>
         </div>
@@ -46,8 +48,16 @@ function Missions() {
             )}
           </div>
           <div className={styles.buttons}>
-            <button type="button" className={styles.joinMissionBtn}>
-              Join Mission
+            <button
+              onClick={() => handleJoinMission(mission.mission_id)}
+              type="button"
+              className={
+                mission.reserved
+                  ? styles.leaveMissionBtn
+                  : styles.joinMissionBtn
+              }
+            >
+              {displayJoinMission(mission.reserved)}
             </button>
           </div>
         </div>

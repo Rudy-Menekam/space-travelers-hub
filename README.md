@@ -1,5 +1,5 @@
 # Space Travelers' Hub
- 
+
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -26,8 +26,6 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-
-
 # 📖 [Space Travelers' Hub] <a name="react"></a>
 
 > **Space Travelers' Hub is a web application for a company that provides commercial and scientific space travel services.**
@@ -50,17 +48,14 @@
 ### Key Features <a name="key-features"></a>
 
 > **[book rockets and join selected space missions.]**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 -
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -77,7 +72,6 @@ In order to run this project you need:
 - GitHub/Git.
 ```
 
-
 ### Setup
 
 Clone this repository to your desired folder:
@@ -87,22 +81,20 @@ Clone this repository to your desired folder:
   git clone https://github.com/Rudy-Menekam/space-travelers-hub.git
 ```
 
-
 ### Install
 
 Install this project with:
-
 
 ```sh
   cd my-project
   npm init -y
 ```
+
 -
 
 ### Usage
 
 To run the project, execute the following command:
-
 
 ```sh
   npm install
@@ -117,10 +109,7 @@ You can deploy this project using:
 git and github pages
 ```
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -128,26 +117,21 @@ git and github pages
 
 - GitHub: [@githubhandle](https://github.com/Rudy-Menekam)
 - Twitter: [@twitterhandle](https://twitter.com/MenekamR)
-- LinkedIn: [linkedIn](https://www.linkedin.com/in/menekam-rudy/) 
+- LinkedIn: [linkedIn](https://www.linkedin.com/in/menekam-rudy/)
 
-👤 ****
+👤 **Stanley Kibor**
 
-- GitHub: [@githubhandle]()
-- Twitter: [@twitterhandle]()
-- LinkedIn: [linkedIn]() 
-
+- GitHub: [@chepkok3](https://github.com/chepkok3)
+- Twitter: [@chepkok3](https://twitter.com/home)
+- LinkedIn: [@chepkok3](https://www.linkedin.com/in/kibor-stanley-350b8a123/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## 🔭 Future Features <a name="future-features"></a>
 
->  **Full application**
+> **Full application**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -157,15 +141,11 @@ Feel free to check the [issues page](https://github.com/Rudy-Menekam/space-trave
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, you are welcomed to star and fork it. You can also share your ideas for future features. 
+If you like this project, you are welcomed to star and fork it. You can also share your ideas for future features.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -173,17 +153,12 @@ I would like to thank Microverse, and theMealDB who are owners of the API docume
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ## ❓ FAQ <a name="faq"></a>
 
 - **[Do you need node installed to run this project?]**
   - [Yes]
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## 📝 License <a name="license"></a>
 
