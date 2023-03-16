@@ -1,8 +1,7 @@
-/* eslint-disable no-param-reassign */
 /* eslint-disable max-len */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-// Get missions from API
+
 const url = 'https://api.spacexdata.com/v3/missions';
 
 export const getMission = createAsyncThunk('mission/getMission', async () => {

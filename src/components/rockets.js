@@ -28,7 +28,6 @@ function Rockets() {
               >
                 {Rocket.reserved ? ('Reserved') : ('')}
               </Badge>
-              {/* <span className="Badge">{Rocket.reserved ? ('Reserved') : ('')}</span> */}
               {Rocket.description}
             </p>
             <Button
