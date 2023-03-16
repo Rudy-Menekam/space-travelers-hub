@@ -19,8 +19,6 @@ nav ul {
   display: flex;
   list-style-type: none;
   gap: 20px;
-
-  /* padding-left: 50%; */
 }
 
 img {
