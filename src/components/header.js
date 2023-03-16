@@ -30,7 +30,7 @@ const Header = () => (
       <div className="Line-2" />
       <li>
         <NavLink
-          to="/"
+          to="/my-profile"
           style={({ isActive }) => ({
             textDecoration: isActive ? 'underline' : 'none',
           })}
