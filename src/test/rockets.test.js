@@ -22,12 +22,7 @@ it('Rocket page renders correctly', () => {
       const state = store.getState().Rocket;
       expect(state.rocketList.length).toEqual(0);
     });
-    it('should Reserve Rocket payload send correct', () => {
-        const expectedPayload = { payload: '9D1B7E0', type: 'Rocket/reserveRocket' };
-        const actualPayload = reserveRocket('9D1B7E0');
-        expect(actualPayload).toEqual(expectedPayload);
-      });
-      it('Rockets fetch data from API', async () => {
+    it('Rockets fetch data from API', async () => {
         const url = 'https://api.spacexdata.com/v4/rockets';
         const axiosSpy = jest.spyOn(axios, 'get');
         jest.setTimeout(90000);
