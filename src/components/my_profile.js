@@ -29,17 +29,13 @@ function MyProfile() {
         <ul>{renderReservedMissions}</ul>
       </div>
       <div>
-        <h1>My Rockets</h1>
         <div className="rocket_filter">
+          <h1>My Rockets</h1>
           <ul>
             {rockets.filter((rocket) => rocket.reserved === true).length > 0 ? (
               rockets
                 .filter((rocket) => rocket.reserved === true)
-                .map((rocket) => (
-                  <p key={rocket.id}>
-                    {rocket.name}
-                  </p>
-                ))
+                .map((rocket) => <p key={rocket.id}>{rocket.name}</p>)
             ) : (
               <li>No rockets have been reserved.</li>
             )}
@@ -47,7 +43,6 @@ function MyProfile() {
         </div>
       </div>
     </div>
-
   );
 }
 
