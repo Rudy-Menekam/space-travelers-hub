@@ -2,11 +2,7 @@
   display: flex;
   width: 90%;
   margin: 32px auto;
-  justify-content: space-between;
   padding: 32px;
-
-  /* background: linear-gradient(to right, rgb(159, 63, 179), rgb(56, 209, 163)); */
-  border-radius: 10px;
 }
 
 .missionContainer {
@@ -16,13 +12,11 @@
   gap: 16px;
   padding: 16px;
   text-decoration: none;
-
-  /* margin-left: 46rem; */
 }
 
 .missionContainer h1 {
   font-family: 'Montserrat Alternates', sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 32px;
   margin-right: 13.4rem;
 }
@@ -37,9 +31,8 @@
 }
 
 .missionContainer li {
-  border: 1px solid;
+  border: 0.2px solid #6a6a6a;
   padding: 1em 8em;
-  background-color: #9494a9;
   font-size: 1.2rem;
   font-weight: 500;
   text-align: left;
