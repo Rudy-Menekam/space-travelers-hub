@@ -85,3 +85,7 @@ hr {
   margin-top: 5px;
   background-color: darkgreen;
 }
+
+.rocket_filter {
+  border: 1px solid;
+}
