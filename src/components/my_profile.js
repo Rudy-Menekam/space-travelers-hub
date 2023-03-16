@@ -6,6 +6,7 @@ import styles from './styles/myprofile.module.css';
 function MyProfile() {
   const dispatch = useDispatch();
   const reservedMission = useSelector((store) => store.missions.reserved);
+  const rockets = useSelector((state) => state.Rocket.rocketList);
 
   useEffect(() => {
     dispatch(myReservedMissions());
@@ -27,7 +28,26 @@ function MyProfile() {
         <h1>My Missions</h1>
         <ul>{renderReservedMissions}</ul>
       </div>
+      <div>
+        <h1>My Rockets</h1>
+        <div className="rocket_filter">
+          <ul>
+            {rockets.filter((rocket) => rocket.reserved === true).length > 0 ? (
+              rockets
+                .filter((rocket) => rocket.reserved === true)
+                .map((rocket) => (
+                  <p key={rocket.id}>
+                    {rocket.name}
+                  </p>
+                ))
+            ) : (
+              <li>No rockets have been reserved.</li>
+            )}
+          </ul>
+        </div>
+      </div>
     </div>
+
   );
 }
 
