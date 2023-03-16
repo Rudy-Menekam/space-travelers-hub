@@ -64,7 +64,7 @@ hr {
 
 .content img {
   width: 250px;
-  height: 250px;
+  height: 215px;
 }
 
 .description {
@@ -73,4 +73,13 @@ hr {
 
 .description h1 {
   margin: 0;
+}
+
+.Badge {
+  padding: 4px;
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  background-color: darkgreen;
 }

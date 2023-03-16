@@ -21,6 +21,7 @@ function Rockets() {
           <div className="description">
             <h1>{Rocket.name}</h1>
             <p>
+              <span className="Badge">{Rocket.reserved ? ('Reserved') : ('')}</span>
               {Rocket.description}
             </p>
             <button
