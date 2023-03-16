@@ -13,12 +13,12 @@ exports[`renders correctly 1`] = `
     <ul />
   </div>
   <div>
-    <h1>
-      My Rockets
-    </h1>
     <div
       className="rocket_filter"
     >
+      <h1>
+        My Rockets
+      </h1>
       <ul>
         <li>
           No rockets have been reserved.

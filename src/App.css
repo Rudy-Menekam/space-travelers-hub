@@ -12,7 +12,7 @@
   font-size: 2.875rem;
   font-weight: bold;
   color: #000;
-  margin-right: 48rem;
+  margin-right: 25rem;
 }
 
 nav ul {
@@ -72,7 +72,9 @@ hr {
 }
 
 .rocket_filter h1 {
-  margin-left: 2.3rem;
+  margin-left: 1.8rem;
+  font-size: 32px;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .rocket_filter li {
@@ -87,13 +89,6 @@ hr {
 .description h1 {
   margin: 0;
 }
-
-/* .Badge {
-  color: white;
-  background-color: rgb(87, 87, 216);
-  padding: 4px;
-  border-radius: 3px;
-} */
 
 .rocket_filter p {
   border: 1px solid;

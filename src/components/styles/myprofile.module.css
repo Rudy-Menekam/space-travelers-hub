@@ -10,15 +10,14 @@
   align-items: center;
   flex-direction: column;
   gap: 16px;
-  padding: 16px;
+  padding: 6px;
   text-decoration: none;
 }
 
 .missionContainer h1 {
   font-family: 'Montserrat Alternates', sans-serif;
-  font-weight: bold;
   font-size: 32px;
-  margin-right: 13.4rem;
+  padding-bottom: 12px;
 }
 
 .missionContainer ul {

@@ -35,10 +35,11 @@ const rocketSlice = createSlice({
     }),
   },
   extraReducers(builder) {
-    builder.addCase(fetchRocket.pending, (state) => ({
-      ...state,
-      status: 'loading',
-    }))
+    builder
+      .addCase(fetchRocket.pending, (state) => ({
+        ...state,
+        status: 'loading',
+      }))
       .addCase(fetchRocket.fulfilled, (state, action) => ({
         ...state,
         rocketList: action.payload.map((rocket) => ({
