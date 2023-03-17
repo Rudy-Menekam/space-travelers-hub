@@ -25,6 +25,10 @@
   grid-template-rows: minmax(6em, auto);
 }
 
+.missionItems:nth-child(even) {
+  background-color: rgb(229, 227, 227, 0.5);
+}
+
 .missionItems div {
   text-align: left;
   border: 1px solid rgb(229, 227, 227);
