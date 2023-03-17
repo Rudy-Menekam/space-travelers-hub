@@ -1,11 +1,14 @@
-/* eslint-disable no-param-reassign */
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styles from './styles/mission.module.css';
-import { joinMission } from '../reduxState/missionSlice';
+import { getMission, joinMission } from '../reduxState/missionSlice';
 
 function Missions() {
-  const { missions, status } = useSelector((store) => store.missions);
   const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getMission());
+  }, [dispatch]);
+  const { missions, status } = useSelector((store) => store.missions);
 
   function displayJoinMission(currentState) {
     return currentState ? 'Leave Mission' : 'Join Mission';

@@ -9,7 +9,13 @@ export const getMission = createAsyncThunk('mission/getMission', async () => {
   response.data.forEach((object) => {
     object.reserved = false;
   });
-  return response.data;
+
+  const filteredData = response.data.map((mission) => ({
+    mission_id: mission.mission_id,
+    mission_name: mission.mission_name,
+    description: mission.description,
+  }));
+  return filteredData;
 });
 
 const initialState = {
