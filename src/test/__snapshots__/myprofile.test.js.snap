@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="missionProfile"
+>
+  <div
+    className="missionContainer"
+  >
+    <h1>
+      My Missions
+    </h1>
+    <ul />
+  </div>
+  <div>
+    <div
+      className="rocket_filter"
+    >
+      <h1>
+        My Rockets
+      </h1>
+      <ul>
+        <li>
+          No rockets have been reserved.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

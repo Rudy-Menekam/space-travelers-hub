@@ -1,0 +1,101 @@
+.missions {
+  padding: 1rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1.2fr;
+}
+
+.header div {
+  text-align: left;
+  border: 1px solid rgb(229, 227, 227);
+  padding-left: 8px;
+}
+
+.header div p {
+  line-height: 2rem;
+  font-weight: 800;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.missionItems {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1.2fr;
+  grid-template-rows: minmax(6em, auto);
+}
+
+.missionItems:nth-child(even) {
+  background-color: rgb(229, 227, 227, 0.5);
+}
+
+.missionItems div {
+  text-align: left;
+  border: 1px solid rgb(229, 227, 227);
+  padding-left: 8px;
+}
+
+.missionInfo {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.missionHead {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 900;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 16px;
+}
+
+.missionItems div p {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.memberBtn {
+  background-color: rgba(35, 33, 33, 0.727);
+  padding: 3.5px 22.5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.activeMemberBtn {
+  background-color: rgb(9, 105, 97);
+  padding: 3.5px 22.5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.joinMissionBtn {
+  background-color: transparent;
+  padding: 8px 29px;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.leaveMissionBtn {
+  background-color: transparent;
+  padding: 8px 29px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  border: 1px solid red;
+  color: red;
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: blue;
+}

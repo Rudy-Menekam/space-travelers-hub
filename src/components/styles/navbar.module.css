@@ -1,0 +1,20 @@
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLink {
+  font-size: 22px;
+  margin-right: 20px;
+  color: #333;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+}
+
+.navLink.active {
+  color: #fff;
+  background-color: #333;
+  padding: 5px;
+  border-radius: 5px;
+}
