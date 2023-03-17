@@ -1,26 +1,24 @@
 #nav {
-  width: 89%;
   height: 5.938rem;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 12px;
 }
 
 .logo {
   font-size: 2.875rem;
   font-weight: bold;
   color: #000;
-  margin-right: 28rem;
+  margin-right: 48rem;
 }
 
 nav ul {
   display: flex;
   list-style-type: none;
   gap: 20px;
-
-  /* padding-left: 50%; */
 }
 
 img {
@@ -74,7 +72,9 @@ hr {
 }
 
 .rocket_filter h1 {
-  margin-left: 2.3rem;
+  margin-left: 1.8rem;
+  font-size: 32px;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .rocket_filter li {
@@ -90,15 +90,6 @@ hr {
   margin: 0;
 }
 
-.Badge {
-  padding: 4px;
-  color: white;
-  border-radius: 5px;
-  margin-right: 10px;
-  margin-top: 5px;
-  background-color: darkgreen;
-}
-
 .rocket_filter p {
   border: 1px solid;
   padding: 1em 8em;
@@ -106,4 +97,8 @@ hr {
   font-size: 1.2rem;
   font-weight: 500;
   text-align: left;
+}
+
+.rocket_filter ul {
+  margin-top: 1rem;
 }
